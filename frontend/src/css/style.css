@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "starwars";
+  src: local("starwars"), url("/fonts/starwars.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "starwarstext";
+  src: local("starwarstext"), url("/fonts/starwarstext.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "xizor";
+  src: local("xizor"), url("/fonts/xizor.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "ewok";
+  src: local("ewok"), url("/fonts/ewok.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "tiewing";
+  src: local("tiewing"), url("/fonts/tiewing.ttf") format("TrueType");
+}
+@font-face {
+  font-family: "jedi";
+  src: local("jedi"), url("/fonts/jedi.ttf") format("TrueType");
+}
+nav.navbar {
+  background-color: #1B1F28;
+  border-radius: 0px;
+  border: none;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+}
+nav.navbar > ul {
+  float: none;
+  text-align: center;
+}
+nav.navbar > ul.navbar-nav > li {
+  float: none;
+  display: inline-block;
+  margin: 0px auto;
+}
+nav.navbar > ul.navbar-nav > li > a,
+nav.navbar > ul.navbar-nav > li > a:visited,
+nav.navbar > ul.navbar-nav > li > a:active {
+  color: #AAAAAA;
+}
+nav.navbar > ul.navbar-nav > li > a:hover {
+  color: #CC0000;
+}
+.main-view {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+.dashboard-page {
+  background-image: url(/img/imperial_wallpaper_hd.png);
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 30px;
+}
+.info-tile {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(150, 150, 150, 0.75);
+  border: 1px solid rgba(10, 10, 10, 0.5);
+  border-radius: 5px;
+  box-shadow: 0px 10px 8px 1px rgba(0, 0, 0, 0.75);
+  margin: 0px auto;
+}
+.outer-tile {
+  height: 800px;
+  text-align: center;
+  padding: 0px 20px;
+}
+.inner-tile {
+  margin-top: 100px;
+}
+.newest-books-title,
+.newest-purchases-title {
+  font-size: 16pt;
+  padding: 5px;
+  color: #1b1f28;
+  text-align: center;
+}
+.newest-books-list {
+  list-style: none;
+  padding: 0px;
+  margin-top: 25px;
+}
+.newest-books-list > li {
+  padding: 10px;
+}
+.newest-books-list img {
+  cursor: pointer;
+}
+.books-count-title,
+.books-count-purchased-title {
+  font-size: 20pt;
+  padidng: 20px;
+  margin-top: 20px;
+}
+.notices-title {
+  font-size: 14pt;
+  padding: 10px;
+}
+.books-count,
+.books-count-purchased {
+  font-size: 35pt;
+  padding: 10px;
+}
+.books-count:hover {
+  color: #cc0000;
+  cursor: pointer;
+}
+.purchase-progressbar {
+  height: 30px;
+  width: 240px;
+  margin: 0px auto;
+  border: 1px solid #1b1f28;
+}
+.purchase-progressbar-positive {
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 255, 0, 0.5);
+  float: left;
+  cursor: pointer;
+}
+.purchase-progressbar-positive:hover {
+  background-color: rgba(0, 255, 0, 0.8);
+}
+.purchase-progressbar-negative {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  float: left;
+  cursor: pointer;
+}
+.purchase-progressbar-negative:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+textarea.notices {
+  font-family: "starwarstext";
+  font-size: 12pt;
+  width: 240px;
+  height: 130px;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  border-radius: none;
+  outline: none;
+  box-shadow: none;
+}
+textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.book-info-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #1b1f28;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  margin-left: 23px;
+  padding: 10px;
+}
+.book-info-box:after,
+.book-info-box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.book-info-box:after {
+  border-right-color: #1b1f28;
+  border-width: 20px;
+  margin-top: -20px;
+}
+.book-info-box:before {
+  border-right-color: #1b1f28;
+  border-width: 23px;
+  margin-top: -23px;
+}
+.book-info-series {
+  font-weight: bold;
+}
+.book-info-title {
+  font-weight: bold;
+}
+.book-info-details {
+  font-family: "starwarstext";
+  text-align: left;
+  font-size: 10pt;
+  margin-left: 10px;
+}
+.book-detail-link {
+  color: black;
+}
+* {
+  cursor: default;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+  font-family: "starwars";
+}
+a {
+  cursor: pointer;
+  color: black;
+}
+a:hover {
+  color: #cc0000;
+  text-decoration: none;
+}
+.top {
+  vertical-align: top;
+}
+.center-text {
+  text-align: center;
+}
+.col {
+  display: inline-block;
+}
+.col-100 {
+  display: inline-block;
+  width: 100px;
+}
+.col-200 {
+  display: inline-block;
+  width: 200px;
+}
+.col-300 {
+  display: inline-block;
+  width: 300px;
+}

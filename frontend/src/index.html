@@ -1,0 +1,30 @@
+<html ng-app="app">
+	<head>
+		<link type="text/css" rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li class="top"><img src="img/rebellion_logo_320.png" height="50px" width="50px" /></li>
+				<!-- <li><a ui-sref="booklist">Bücherliste</a></li> -->
+				<li><a ui-sref="dashboard">Dashboard</a></li>
+				<!-- <li><a ui-sref="history">Historie</a></li> -->
+				<li class="top"><img src="img/imperial_logo_320.png" height="50px" width="50px" /></li>
+			</ul>
+		</nav>
+
+		<div ui-view="main" class="main-view">
+
+		</div>
+
+		<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+		<script type="text/javascript" src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="dashboard/dashboard.js"></script>
+	</body>
+</html>

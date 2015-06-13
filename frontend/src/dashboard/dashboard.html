@@ -1,0 +1,81 @@
+<div class="dashboard-page">
+	<div class="center-text">
+		<div class="col-md-4">
+			<div class="info-tile outer-tile">
+				<div class="newest-books-title">Neuste Bücher</div>
+				<div>
+					<ul class="newest-books-list">
+						<li>
+							<div class="col">
+								<img ng-click="isCollapsed = !isCollapsed;" src="/img/apokalypse.png" height="200px" />
+							</div>
+							<div ng-show="isCollapsed" class="col book-info-box">
+								<div class="book-info-series">Das Verhängnis der Jedi Ritter 9</div>
+								<div class="book-info-title">Apokalypse</div>
+								<br />
+								<div class="book-info-details">
+									<div>
+										<div class="col-100">Verlag:</div>
+										<div class="col">Blanvalet</div>
+									</div>
+									<div>
+										<div class="col-100">Autor:</div>
+										<div class="col">Troy Denning</div>
+									</div>
+									<div>
+										<div class="col-100">Zeitraum:</div>
+										<div class="col">44 NSY</div>
+									</div>
+									<div>
+										<div class="col-100">Seitenzahl:</div>
+										<div class="col">633</div>
+									</div>
+									<div>
+										<div class="col-100">Neupreis:</div>
+										<div class="col">9,99 €</div>
+									</div>
+								</div>
+								<div>
+									<a class="book-detail-link">Detailseite</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="col">
+								<img src="/img/apokalypse.png" height="200px" />
+							</div>
+						</li>
+						<li>
+							<div class="col">
+								<img src="/img/apokalypse.png" height="200px" />
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="info-tile">
+				<div class="books-count-title">Bücher</div>
+				<div class="books-count" title="Alle Bücher auflisten">237</div>
+			</div>
+			<div class="info-tile inner-tile">
+				<div class="books-count-purchased-title">Im Besitz</div>
+				<div class="books-count-purchased">140</div>
+				<div class="purchase-progressbar">
+					<div class="purchase-progressbar-positive" title="Gekaufte Bücher auflisten"></div>
+					<div class="purchase-progressbar-negative" title="Fehlende Bücher auflisten"></div>
+				</div>
+			</div>
+			<div class="info-tile inner-tile">
+				<div class="notices-title">Notizen</div>
+				<textarea class="notices"></textarea>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="info-tile outer-tile">
+				<div class="newest-purchases-title">Neuste Käufe</div>
+			</div>
+		</div>
+	</div>
+</div>
